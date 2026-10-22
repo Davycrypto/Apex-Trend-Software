@@ -1,0 +1,8 @@
+{
+  "name": "Apex Trend Signal",
+  "description": "Professional TradingView technical indicator sales landing page for Apex Trend Signal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
