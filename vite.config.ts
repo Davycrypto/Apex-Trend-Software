@@ -4,22 +4,12 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
 
-export default defineConfig(() => {
-  return {
-    base: '/Apex-Trend-Software/',
-
-    plugins: [react(), tailwindcss()],
-
-    resolve: {
-      alias: {
-        '@': path.resolve('.'),
-      },
+export default defineConfig({
+  base: '/Apex-Trend-Software/',
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@': path.resolve('.'),
     },
-
-    server: {
-      hmr: process.env.DISABLE_HMR !== 'true',
-      watch: process.env.DISABLE_HMR === 'true' ? null : {},
-    },
-  };
+  },
 });
-base: '/Apex-Trend-Software/',
